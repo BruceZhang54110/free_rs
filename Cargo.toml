@@ -2,4 +2,6 @@
 
 resolver = "2"
 
-members = ["crates/demo"]
+members = ["crates/demo"
+, "crates/minigrep"
+]
