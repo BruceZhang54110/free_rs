@@ -1,2 +1,4 @@
 # free_rs
-My First Rust Project
+This is a Rust project
+
+Rust Example about rust learning
