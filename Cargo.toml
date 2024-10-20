@@ -2,6 +2,8 @@
 
 resolver = "2"
 
-members = ["crates/demo"
-, "crates/minigrep"
+members = [
+    "crates/demo",
+    "crates/error_demo",
+    "crates/minigrep"
 ]
