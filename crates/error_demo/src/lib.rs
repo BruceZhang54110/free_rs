@@ -36,6 +36,7 @@ fn read_username_from_file_three() -> Result<String, Error> {
     Ok(username)
 }
 
+
 #[cfg(test)]
 mod tests {
     use super::*;

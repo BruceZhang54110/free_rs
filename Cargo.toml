@@ -6,4 +6,4 @@ members = [
     "crates/demo",
     "crates/error_demo",
     "crates/minigrep"
-]
+, "crates/ownership_demo"]

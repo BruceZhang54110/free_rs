@@ -1,3 +1,4 @@
 fn main() {
-    println!("Hello, world! This is demo bin.");
+    //println!("Hello, world! This is demo");
+
 }
