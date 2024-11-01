@@ -12,6 +12,10 @@ fn gives_ownership() -> String {
     s
 }
 
+fn takes_ownership_references(some_string: &String) {
+    println!("fn s:{}", some_string);
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -21,7 +25,7 @@ mod tests {
     fn test_takes_ownership() {
         let s = String::from("hello");
         takes_ownership(s);
-        //println!("s:{}", s);
+        // println!("s:{}", s); //  value borrowed here after move, error[E0382]: borrow of moved value: `s`
     }
 
     #[test]
@@ -34,8 +38,8 @@ mod tests {
     #[test]
     fn test_gives_ownership() {
         let s = gives_ownership();
-        takes_ownership(s);
-        println!("s:{}", s);
+        takes_ownership_references(&s);
+        println!("打印:{}", s);
     }
 
 }
