@@ -4,6 +4,9 @@ resolver = "2"
 
 members = [
     "crates/demo",
-    "crates/error_demo", "crates/life_time",
-    "crates/minigrep"
-, "crates/ownership_demo"]
+    "crates/error_demo",
+    "crates/generics_demo",
+    "crates/life_time",
+    "crates/minigrep",
+    "crates/ownership_demo"
+]
