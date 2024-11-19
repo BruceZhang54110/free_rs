@@ -32,9 +32,9 @@ fn channel_multiple_value() {
         ];
         for val in vals {
             tx.send(val).unwrap();
-            thread::sleep(Duration::from_millis(1000));
+            thread::sleep(Duration::from_secs(1));
         }
-    }).join().unwrap();
+    });
     
     println!("main thread...");
     for received in rx {

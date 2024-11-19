@@ -27,9 +27,9 @@ fn main() {
 
         for val in vals {
             tx.send(val).unwrap();
-            thread::sleep(Duration::from_secs(1));
+            thread::sleep(Duration::from_millis(2000));
         }
-    }).join().unwrap();
+    });
 
     for received in rx {
         println!("Got: {received}");
