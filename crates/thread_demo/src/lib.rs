@@ -79,7 +79,7 @@ fn channel_clone_multiple_value() {
 }
 
 fn mutex_lock() {
-    let m = Mutex::new(5);
+    let m: Mutex<i32> = Mutex::new(5);
     {
         let mut num = m.lock().unwrap();
         *num = 6;
@@ -101,10 +101,12 @@ fn multiple_thread_mutex_lock() {
         });
         handles.push(handle);
     }
+    // 等待所有线程结束
     for handle in handles {
         handle.join().unwrap();
     }
 
+    // 主线程会获取锁，并打印出程序的结果
     println!("Result: {}", *counter.lock().unwrap());
 
 }
