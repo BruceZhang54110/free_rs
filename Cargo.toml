@@ -7,7 +7,10 @@ members = [
     "crates/error_demo",
     "crates/generics_demo",
     "crates/grrs",
+    "crates/hello-async",
     "crates/life_time",
     "crates/minigrep",
-    "crates/ownership_demo"
-, "crates/thread_demo"]
+    "crates/oop_demo",
+    "crates/ownership_demo",
+    "crates/thread_demo"
+]
