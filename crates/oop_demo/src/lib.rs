@@ -1,3 +1,5 @@
+mod oop;
+
 pub struct AveragedCollection {
     // 集合
     list: Vec<i32>,
@@ -34,8 +36,11 @@ impl AveragedCollection {
 
 }
 
+
 #[cfg(test)]
 mod tests {
+    use oop::{Button, Screen, SelectBox};
+
     use super::*;
 
     #[test]
@@ -50,7 +55,26 @@ mod tests {
         c.remove();
         println!("remove a node, and now average value: {}", c.average());
 
+    }
 
+    #[test]
+    fn test_trait_oop() {
+
+        let screen = Screen {
+            components: vec![
+                Box::new(SelectBox {
+                    width: 75,
+                    height: 10,
+                    options: vec![String::from("Yes"), String::from("No"),]
+                }),
+                Box::new(Button {
+                    width: 50,
+                    height: 10,
+                    label: String::from("OK"),
+                }),
+            ]
+        };
+        screen.run();
     }
 
 }
