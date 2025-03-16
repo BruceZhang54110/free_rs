@@ -36,7 +36,7 @@ pub struct SelectBox {
 
 impl Draw for SelectBox {
     fn draw(&self) {
-        println!("SelectBox drawing")
+        println!("SelectBox drawing");
     }
     
 }

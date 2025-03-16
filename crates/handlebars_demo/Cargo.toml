@@ -1,0 +1,9 @@
+[package]
+name = "handlebars_demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+handlebars = "6.2.0"
+serde = "1.0.215"
+serde_json = "1.0.133"
