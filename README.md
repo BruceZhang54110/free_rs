@@ -15,6 +15,7 @@ Rust Example about Rust learning
 8. :smile: [Rust thread demo](https://github.com/BruceZhang54110/free_rs/tree/main/crates/thread_demo): Concurrency
 9. :smile: [Rust async & await demo](https://github.com/BruceZhang54110/free_rs/tree/main/crates/hello-async): Rust async & await
 10. :smile: [Rust OOP demo](https://github.com/BruceZhang54110/free_rs/tree/main/crates/oop_demo): Rust OOP 面相对象编程
+11. :smile: [Rust closures](https://github.com/BruceZhang54110/free_rs/tree/main/crates/closures_demo)
 
 
 
