@@ -2,7 +2,7 @@
 
 resolver = "2"
 
-members = [
+members = [ "crates/closures_demo",
     "crates/demo",
     "crates/error_demo",
     "crates/generics_demo",
