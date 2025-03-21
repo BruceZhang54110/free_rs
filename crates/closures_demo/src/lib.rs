@@ -25,7 +25,7 @@ fn mut_reference_demo() {
 
     
     let mut brrows_muably = || list.push(4);
-    // println!("After calling closure: {list:?}");
+    //println!("After calling closure: {list:?}");
     brrows_muably();
     println!("After calling closure: {list:?}");
     
@@ -37,6 +37,28 @@ fn get_data_demo() {
     // 新建一个线程
     thread::spawn(move || println!("From thread: {list:?}"))
     .join().unwrap();
+}
+
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+fn sort_rectangle() {
+    let mut list = [
+        Rectangle { width: 10, height: 1 },
+        Rectangle { width: 3, height: 5 },
+        Rectangle { width: 7, height: 12 },
+    ];
+    let mut count = 0;
+    
+    
+    list.sort_by_key(|r| {
+        count += 1;
+        r.width;
+    });
+    println!("{list:#?}");
 }
 
 #[cfg(test)]
@@ -57,6 +79,11 @@ mod test {
     #[test]
     fn test_get_data_demo() {
         get_data_demo();
+    }
+
+    #[test]
+    fn test_sort_rectangle() {
+        sort_rectangle();
     }
 
 }
