@@ -16,6 +16,7 @@ Rust Example about Rust learning
 9. :smile: [Rust async & await demo](https://github.com/BruceZhang54110/free_rs/tree/main/crates/hello-async): Rust async & await
 10. :smile: [Rust OOP demo](https://github.com/BruceZhang54110/free_rs/tree/main/crates/oop_demo): Rust OOP 面相对象编程
 11. :smile: [closures_demo](https://github.com/BruceZhang54110/free_rs/tree/main/crates/closures_demo) Rust closures
+12. :smile: [Rust Iterators demo](https://github.com/BruceZhang54110/free_rs/tree/main/crates/iterators_demo) Rust Iterators 迭代器
 
 
 
