@@ -54,7 +54,7 @@ fn sort_rectangle() {
     let mut count = 0;
     
     
-    list.sort_by_key(|r| {
+    list.sort_by_key(|r: &Rectangle| {
         count += 1;
         r.width;
     });
