@@ -6,11 +6,8 @@ use minigrep1::Config;
 
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    // dbg!(args); // stderr
-    // 传入两个参数
 
-    let config = Config::build(&args).unwrap_or_else(|err| {
+    let config = Config::build(env::args()).unwrap_or_else(|err| {
         eprintln!("Problem parsing arguments: {}", err);
         process::exit(1);
     });
