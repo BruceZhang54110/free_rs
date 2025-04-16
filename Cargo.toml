@@ -2,7 +2,7 @@
 
 resolver = "2"
 
-members = [ "crates/closures_demo",
+members = [ "crates/advanced_traits", "crates/closures_demo",
     "crates/demo",
     "crates/error_demo",
     "crates/generics_demo",
@@ -15,6 +15,6 @@ members = [ "crates/closures_demo",
     "crates/minigrep1",
     "crates/oop_demo",
     "crates/ownership_demo",
-    "crates/patterns_demo",
+    "crates/patterns_demo", "crates/smart_pointers_demo",
     "crates/thread_demo"
 ]
