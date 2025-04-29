@@ -1,5 +1,7 @@
 use std::{sync::{mpsc, Arc, Mutex}, thread, time::Duration};
 
+mod thread_code;
+
 fn move_value() {
     let v = vec![1, 2, 3];
     let handle = thread::spawn(move || {

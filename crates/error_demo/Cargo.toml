@@ -5,6 +5,7 @@ edition = "2021"
 description = "rsut error demo"
 
 [dependencies]
+anyhow = "1.0.98"
 
 [profile.release]
 panic = 'abort'

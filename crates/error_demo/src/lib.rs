@@ -1,3 +1,5 @@
+mod anyhow;
+
 use std::{fs::File, io::{Error, Read}};
 
 fn open_file_unwrap() {
