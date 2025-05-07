@@ -4,12 +4,12 @@ pub struct ImportRxcerpt<'a> {
     pub part: &'a str,
 }
 
-impl ImportRxcerpt {
+impl<'a> ImportRxcerpt<'a> {
     pub fn level(&self) -> i32 {
         3
     }
 
-    pub fn announce_and_return_part(&self, announcement: &str) -> &str {
+    pub fn announce_and_return_part(&self, announcement: &str) -> &'a str {
         println!("Attention please: {}", announcement);
         self.part
     }

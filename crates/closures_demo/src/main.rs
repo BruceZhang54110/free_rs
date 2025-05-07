@@ -54,6 +54,6 @@ fn main() {
 
     let e = |x| x;
     let s = e(String::from("hello"));
-    let n = e(5);
+    // let n = e(5);
 
 }

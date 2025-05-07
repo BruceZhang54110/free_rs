@@ -68,7 +68,7 @@ mod tests {
 
 
     #[test]
-    fn test_impl_method1 {
+    fn test_impl_method1() {
         let a = "ddd";
         ImportRxcerpt::level(a);
     }

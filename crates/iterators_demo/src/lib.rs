@@ -9,8 +9,9 @@ fn shoes_in_size(shoes: Vec<Shoe>, shoe_size: i32) -> Vec<Shoe> {
 }
 
 
-fn shoes_in_size(shoes: Vec<Shoe>, shoe_size: i32) -> Vec<Shoe> {
-    shoes.iter().filter(|s| s.size == shoe_size).collect()
+fn shoes_in_size1(shoes: Vec<Shoe>, shoe_size: i32) -> Vec<Shoe> {
+    // shoes.iter().filter(|s| s.size == shoe_size).collect()
+    todo!()
 }
 
 
