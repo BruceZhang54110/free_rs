@@ -1,4 +1,6 @@
 use std::{fmt, ops::Add};
+use std::ops::Deref;
+use std::ops::DerefMut;
 
 #[derive(Debug, PartialEq)]
 struct Point {
@@ -102,9 +104,41 @@ impl fmt::Display for Point {
     }
 }
 
+/// newtype pattern
+struct Wrapper(Vec<String>);
+
+impl fmt::Display for Wrapper {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "[{}]", self.0.join(", "))
+    }
+
+}
+
+impl Deref for Wrapper {
+    type Target = Vec<String>;
+
+    fn deref(&self) -> &Vec<String> {
+        &self.0
+    }
+}
+
+impl DerefMut for Wrapper {
+    fn deref_mut(&mut self) -> &mut Vec<String> {
+        &mut self.0
+    }
+}
+
+impl Wrapper {
+    pub fn len(&self) -> usize {
+        self.0.len()
+    }
+}
+
 
 #[cfg(test)]
 mod tests {
+    use std::vec;
+
     use super::*;
 
     #[test]
@@ -153,6 +187,22 @@ mod tests {
             y: 3
         };
         p1.outline_print();
+
+    }
+
+    #[test]
+    fn test_newtype() {
+
+        let mut w = Wrapper(vec![
+            String::from("hello"),
+            String::from("world"),
+        ]);
+        println!("{}", w);
+
+        assert_eq!(w.len(), 2);
+        w.push(String::from("rust"));
+
+        println!("{}", w);
 
     }
 
