@@ -18,6 +18,7 @@ Rust Example about Rust learning
 11. :smile: [closures_demo](https://github.com/BruceZhang54110/free_rs/tree/main/crates/closures_demo) Rust closures
 12. :smile: [Rust Iterators demo](https://github.com/BruceZhang54110/free_rs/tree/main/crates/iterators_demo) Rust Iterators 迭代器
 13. :smile: [Rust Smart Pointers](https://github.com/BruceZhang54110/free_rs/tree/main/crates/smart_pointers_demo) Rust 智能指针
+14. :smile: [Rust advanced trait](https://github.com/BruceZhang54110/free_rs/tree/main/crates/advanced_traits)
 
 
 
