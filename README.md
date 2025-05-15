@@ -3,7 +3,7 @@ This is a Rust project
 
 Rust Example about Rust learning
 
-## crates package
+## Crates Package
 1. :smile: [demo](https://github.com/BruceZhang54110/free_rs/tree/549d4fbb59cdb4cf225d5ee3d65dc650da67e67a/crates/demo): hello world
 2. :smile: [error_demo](https://github.com/BruceZhang54110/free_rs/tree/549d4fbb59cdb4cf225d5ee3d65dc650da67e67a/crates/error_demo): Error Handling
 3. :smile: [generics_demo](https://github.com/BruceZhang54110/free_rs/tree/main/crates/generics_demo): generics
