@@ -20,5 +20,7 @@ members = [
     "crates/ownership_demo",
     "crates/patterns_demo", 
     "crates/smart_pointers_demo",
+    "crates/tcp_client_demo",
+    "crates/tcp_server_demo",
     "crates/thread_demo"
-]
+, "crates/udp_client_demo", "crates/udp_server_demo"]
