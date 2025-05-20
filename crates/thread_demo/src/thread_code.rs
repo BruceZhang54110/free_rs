@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod tests {
-    use std::{thread::{self, Thread}, time::Duration, sync::{Arc, Mutex}};
+    use std::{sync::{Arc, Mutex}, thread, time::Duration};
 
 
     #[test]
