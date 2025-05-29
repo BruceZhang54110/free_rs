@@ -34,13 +34,13 @@ fn channel_multiple_value() {
         ];
         for val in vals {
             tx.send(val).unwrap();
-            thread::sleep(Duration::from_secs(1));
+            thread::sleep(Duration::from_secs(2));
         }
     });
     
-    println!("main thread...");
+    eprintln!("main thread...");
     for received in rx {
-        println!("Got: {}", received);
+        eprintln!("Got: {}", received);
     }
 }
 
