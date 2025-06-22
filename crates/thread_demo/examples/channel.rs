@@ -15,6 +15,7 @@ fn main() {
         }
     });
     println!("main thread ...");
+    let s: Result<String, mpsc::RecvError> = rx.recv();
     for recv in rx {
         println!("Got :{}", recv);
     }
